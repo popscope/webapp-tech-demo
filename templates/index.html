@@ -1,0 +1,165 @@
+{% extends "base.html" %}
+{% block head %}
+   <style type="text/css" media="screen">
+   html, body {
+     font-family: 'Roboto', 'Helvetica', sans-serif;
+   }
+   .mdl-layout__header-row.popscope-header {
+     padding: 0px 8px 0px 25px;
+   }
+   .astro-content {
+     background-color: #222;
+     color: white;
+   }
+   .astro-targets .mdl-card {
+     margin: 15px 15px 0 0;
+   }
+   .is-small-screen .astro-targets .mdl-card {
+     min-width: calc(100% - 12px);
+   }
+   .astro-target-name {
+     color: #f0f0f0;
+   }
+   .astro-scroll-info {
+     color: #444;
+     font-size: 12px;
+     text-align: right;
+   }
+   .astro-unfortunate-padding {
+     min-width: 12px;
+   }
+   .astro-target {
+     box-sizing: border-box;
+     display: flex;
+     overflow: scroll;
+     width: 100%;
+     margin: 0;
+     padding: 5px 15px;
+     padding-left: 18px;
+     min-height: 340px;
+   }
+   .astro-show-more {
+     padding: 5px 12px;
+     border-radius: 3px;
+     border: 1px solid #C27777;
+     margin: 15px 28px 15px 18px;
+     color: #C27777;
+   }
+   #city-name {
+     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Baltimore_Inner_Harbor_Skyline_Night_Panorama.jpg/640px-Baltimore_Inner_Harbor_Skyline_Night_Panorama.jpg);
+     background-size: cover;
+     margin: 0;
+     padding: 15px;
+     text-align: center;
+     text-stroke: 1px black;
+     font-size: 20px;
+   }
+   </style>
+{% endblock head %}
+{% block main %}
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row popscope-header">
+          <span class="mdl-layout-title">#popscope</span>
+          <div class="mdl-layout-spacer"></div>
+          <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
+            <i class="material-icons">more_vert</i>
+          </button>
+          <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
+            <li class="mdl-menu__item">About</li>
+            <li class="mdl-menu__item">Contact</li>
+            <li class="mdl-menu__item">Legal information</li>
+          </ul>
+        </div>
+      </header>
+      <main class="mdl-layout__content astro-content">
+        <h1 id="city-name">Baltimore</h1>
+        <div class="astro-targets">
+          <div class="astro-target">
+            <div class="mdl-card mdl-shadow--2dp">
+              <div class="mdl-card__title mdl-card--expand mdl-color--lime-300" style="background-position: 50% 50%; background-image: url(/static/images/content/solarsystem.nasa.gov_saturn20131017.jpg); background-size: cover">
+                <h2 class="mdl-card__title-text astro-target-name">Saturn</h2>
+              </div>
+              <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+                Rises:<br>
+                Sets:<br>
+                Transits: 60&deg; W of N at 8pm
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+                <em class="astro-scroll-info">Scroll right to read more</em>
+              </div>
+            </div>
+            <div class="mdl-card mdl-shadow--2dp">
+              <div class="mdl-card__title mdl-color--lime-300 mdl-card--expand">
+                <h2 class="mdl-card__title-text">How big is Saturn? </h2>
+              </div>
+              <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+                Non dolore elit adipisicing ea reprehenderit consectetur culpa.
+                Non dolore elit adipisicing ea reprehenderit consectetur culpa.
+                Non dolore elit adipisicing ea reprehenderit consectetur culpa.
+                Non dolore elit adipisicing ea reprehenderit consectetur culpa.
+                Non dolore elit adipisicing ea reprehenderit consectetur culpa.
+                Non dolore elit adipisicing ea reprehenderit consectetur culpa.
+              </div>
+            </div>
+            <div class="mdl-card mdl-shadow--2dp">
+              <div class="mdl-card__title mdl-color--lime-300 mdl-card--expand">
+                <h2 class="mdl-card__title-text">What are its rings made of?</h2>
+              </div>
+              <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+                Non dolore elit adipisicing ea reprehenderit consectetur culpa.
+                Non dolore elit adipisicing ea reprehenderit consectetur culpa.
+                Non dolore elit adipisicing ea reprehenderit consectetur culpa.
+                Non dolore elit adipisicing ea reprehenderit consectetur culpa.
+                Non dolore elit adipisicing ea reprehenderit consectetur culpa.
+                Non dolore elit adipisicing ea reprehenderit consectetur culpa.
+              </div>
+            </div>
+            <div class="astro-unfortunate-padding"></div>
+          </div>
+          <div class="astro-target">
+            <div class="mdl-card mdl-shadow--2dp">
+              <div class="mdl-card__title mdl-card--expand mdl-color--lime-300">
+                <h2 class="mdl-card__title-text">Mars</h2>
+              </div>
+              <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+                Rises:<br>
+                Sets:<br>
+                Transits: 60&deg; W of N at 8pm
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+                <em class="astro-scroll-info">Scroll right to read more</em>
+              </div>
+            </div>
+            <div class="mdl-card mdl-shadow--2dp">
+              <div class="mdl-card__title mdl-color--lime-300 mdl-card--expand">
+                <h2 class="mdl-card__title-text">How big is Mars? </h2>
+              </div>
+              <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+                Non dolore elit adipisicing ea reprehenderit consectetur culpa.
+                Non dolore elit adipisicing ea reprehenderit consectetur culpa.
+                Non dolore elit adipisicing ea reprehenderit consectetur culpa.
+                Non dolore elit adipisicing ea reprehenderit consectetur culpa.
+                Non dolore elit adipisicing ea reprehenderit consectetur culpa.
+                Non dolore elit adipisicing ea reprehenderit consectetur culpa.
+              </div>
+            </div>
+            <div class="mdl-card mdl-shadow--2dp">
+              <div class="mdl-card__title mdl-color--lime-300 mdl-card--expand">
+                <h2 class="mdl-card__title-text">What&rsquo;s down there?</h2>
+              </div>
+              <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+                Non dolore elit adipisicing ea reprehenderit consectetur culpa.
+                Non dolore elit adipisicing ea reprehenderit consectetur culpa.
+                Non dolore elit adipisicing ea reprehenderit consectetur culpa.
+                Non dolore elit adipisicing ea reprehenderit consectetur culpa.
+                Non dolore elit adipisicing ea reprehenderit consectetur culpa.
+                Non dolore elit adipisicing ea reprehenderit consectetur culpa.
+              </div>
+            </div>
+          </div>
+          <div class="astro-show-more">Show objects not visible tonight</div>
+        </div>
+      </main>
+    </div>
+{% endblock %}

@@ -1,0 +1,14 @@
+Making touch friendly sliding things (need some way to pin vertical position)
+
+https://css-tricks.com/the-javascript-behind-touch-friendly-sliders/
+https://css-tricks.com/slider-with-sliding-backgrounds/ (maybe not relevant)
+
+First-launch:
+   - splash with city names
+   - GPS prompt
+   - request rise/set data
+
+Card ideas:
+   - finding things on the sky (directions + hand approximations for degrees)
+   - How colors determine age of stars
+   -
